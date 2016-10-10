@@ -1,0 +1,18 @@
+{%extends 'base.html'%}
+{%block content%}
+<div class = 'container'>
+  <div class = 'row'>
+    <form method='post' class ='col-xs-offset-1 col-xs-10'>
+      <div class = 'form-group'>
+        <label for="formTitle">New Post Title</label>
+        <input type="text" name="formTitle" placeholder="Post Title" class='form-control'>
+      </div>
+      <div class = 'form-group'>
+        <label for="formContent">New Post Content</label>
+        <textarea name="fromContent" rows="20" cols="80" placeholder="Post content" class='form-control'></textarea>
+      </div>
+      <input type="submit" class = 'btn btn-success'>
+    </form>
+  </div>
+</div>
+{%endblock%}
